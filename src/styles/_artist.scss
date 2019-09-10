@@ -1,5 +1,6 @@
 body {
   font-family: "Comfortaa", cursive;
+  text-align: justify;
 }
 
 #more {
@@ -11,4 +12,40 @@ body {
 }
 #myBtn {
   margin-bottom: 10px;
+}
+
+.card-body {
+  color: black;
+}
+.d-flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items {
+  align-items: stretch;
+}
+.fixed-height {
+  height: 140px;
+}
+.lesOeuvres {
+  background: red;
+  color: black;
+  padding: 10px 15px 5px 0;
+  text-align: justify;
+}
+
+.element {
+  margin: 5px;
+  color: white;
+}
+
+h5 {
+  background: goldenrod;
+  text-align: center;
+  padding: 5px;
 }
