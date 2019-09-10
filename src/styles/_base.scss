@@ -1,7 +1,121 @@
 body {
-  background-image: url(assets/images/bg.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto";
-  color: red;
+  background-color: black;
+  margin: 0;
+}
+
+.container {
+  color: white;
+  padding: 0 20px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  h1 {
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+  }
+  input {
+    margin-bottom: 20px;
+    border: 3px solid white;
+    font-size: 17px;
+    background: black;
+    color: white;
+    padding: 10px;
+  }
+  input [type="text"] {
+    margin: 40px;
+  }
+  i {
+    margin-left: 20px;
+  }
+}
+
+#explain {
+  background: #6385ff;
+  color: white;
+  padding: 10px;
+  width: auto;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px; /* Preferred icon size */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: white;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.dates {
+  .date-heading {
+    .mussel {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background-image: url(/public/assets/images/mussel-bottom.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      img {
+        width: 60px;
+        height: auto;
+        padding-top: 13px;
+      }
+    }
+    .mussel:hover {
+      img {
+        transform-origin: 10% 95%;
+        transform: rotate(-30deg);
+        transition: 0.5s;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+  }
+
+  p {
+    color: #4b3737;
+    background: white;
+    padding: 10px;
+    margin: 25px;
+    width: auto;
+  }
+  h3 {
+    font-family: "Comfortaa", cursive;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+h1.artist {
+  color: yellow;
 }
