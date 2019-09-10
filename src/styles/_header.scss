@@ -6,7 +6,10 @@ header {
     img {
         max-width: 100%;
     }
-
+    #search {
+        position: absolute;
+        bottom: 30px;
+    }
     input {
       margin-bottom: 20px;
       border: 2px solid white;
@@ -14,9 +17,16 @@ header {
       background: black;
       color: white;
       padding: 10px;
+      max-width: 200px;
     }
     i {
-      margin-left: 20px;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+    @media (min-width: 375px) {
+        input{
+            max-width: none;
+        }
     }
   }
   
