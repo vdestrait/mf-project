@@ -1,0 +1,45 @@
+#dates {
+    .date-heading {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 20px;
+      border-bottom: solid 1px #707070;
+      .mussel {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-image: url(/public/assets/images/mussel-bottom.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        margin-left: 5%;
+        img {
+          width: 60px;
+          height: auto;
+          padding-top: 13px;
+        }
+      }
+      .mussel.open {
+        img {
+          transform-origin: 10% 95%;
+          transform: rotate(-30deg);
+          transition: 0.5s;
+        }
+      }
+      h2 {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 20px;
+      }
+    }
+    p {
+        color: #4b3737;
+        background: white;
+        padding: 10px;
+        margin: 25px;
+        width: auto;
+      }
+    .decade.open {
+        background-color: #303030;
+    }
+}
