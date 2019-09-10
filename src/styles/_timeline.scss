@@ -1,9 +1,15 @@
-#dates {
+#timeline {
     .date-heading {
       display: flex;
       align-items: flex-end;
       padding-bottom: 20px;
       border-bottom: solid 1px #707070;
+    }
+      h2 {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 20px;
+      }
       .mussel {
         display: inline-block;
         width: 60px;
@@ -19,27 +25,88 @@
           padding-top: 13px;
         }
       }
-      .mussel.open {
-        img {
-          transform-origin: 10% 95%;
-          transform: rotate(-30deg);
-          transition: 0.5s;
-        }
-      }
-      h2 {
-        display: inline-block;
-        margin-bottom: 0;
-        margin-left: 20px;
-      }
+      
+    .date-heading.active {
+        .mussel {
+            img {
+              transform-origin: 10% 95%;
+              transform: rotate(-30deg);
+              transition: 0.2s;
+            }
+          }
     }
-    p {
-        color: #4b3737;
-        background: white;
-        padding: 10px;
-        margin: 25px;
-        width: auto;
-      }
+    
+    .decade {
+        display: none;
+        border-bottom: 1px dotsolidted #707070;
+    }
+
     .decade.open {
+        display: block;
         background-color: #303030;
+        .mvt-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1rem;
+            border-bottom: 1px solid #707070;
+        }
+        .mvt-body {
+            display: none;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #707070;
+        }
+        .mvt-body.open {
+            display:block;
+        }
+        h3 {
+            display: inline-block;
+            margin-bottom: 0;
+            padding-left: 2rem;
+            padding-top: 5px;
+        }
+        p {
+            padding: 1rem 2rem;
+            margin-bottom: 0;
+        }
+        .fries {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(/public/assets/images/fries.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            margin-left: 10%;
+            img {
+                width: 60px;
+                height: auto;
+                padding-top: 13px;
+            }
+        }
+        .mvt-heading.active {
+            border-bottom: 0;
+            .fries {
+                background-image: url(/public/assets/images/fries-cross.png);
+            }
+        }
+        .artists-list{
+            padding: 0 .5rem;
+            a {
+                margin: 0.35rem;
+                background-color: #D5CEE0;
+                border-color: #D5CEE0;
+                border-radius: 0;
+                i {
+                    margin-right: 7.5px;
+                }
+            }
+            a:hover {
+                margin: 0.35rem;
+                background-color: white;
+                border-color: #D5CEE0;
+                
+            }
+        }
     }
 }
