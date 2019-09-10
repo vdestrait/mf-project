@@ -29,20 +29,23 @@
     .date-heading.active {
         .mussel {
             img {
-              transform-origin: 10% 95%;
-              transform: rotate(-30deg);
-              transition: 0.2s;
+                transform: rotate(-30deg);
+              transform-origin: 15% 95%;
+              transition: all .5s ease-in-out;
             }
           }
     }
     
     .decade {
         display: none;
-        border-bottom: 1px dotsolidted #707070;
+        opacity: 0;
+        border-bottom: 1px solid #707070;
     }
 
     .decade.open {
         display: block;
+        opacity: 1;
+        transition: all 3s ease-in;
         background-color: #303030;
         .mvt-heading {
             display: flex;
@@ -88,6 +91,8 @@
             border-bottom: 0;
             .fries {
                 background-image: url(/public/assets/images/fries-cross.png);
+                transform-style: preserve-3d;
+                transition: 0.1s;
             }
         }
         .artists-list{

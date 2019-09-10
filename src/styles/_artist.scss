@@ -1,6 +1,4 @@
-body {
-  font-family: "Comfortaa", cursive;
-}
+
 
 #more {
   display: none;
@@ -13,9 +11,16 @@ body {
   margin-bottom: 10px;
 }
 
-.card-body {
-  color: black;
+.card {
+  border-radius: 0;
+  .card-img-top {
+    border-radius:0,
+  }
+  .card-body {
+    color: black;
+  }
 }
+
 
 .lesOeuvres {
   background: red;
