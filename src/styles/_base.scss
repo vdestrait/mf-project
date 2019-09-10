@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+.btn-mf {
+    background-color: #D5CEE0;
+    border-color: #D5CEE0;
+    border-radius: 0;
+}
+.btn-mf:hover {
+    background-color: white;
+    border-color: #D5CEE0; 
+}
+
+
 #explain {
   background: #6385ff;
   color: white;
@@ -41,5 +52,29 @@ body {
   font-feature-settings: "liga";
 }
 
+
+.fries-btn {
+  width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+  a {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-image: url(/public/assets/images/fries-cross_bn.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
+  }
+  
+}
 
 
