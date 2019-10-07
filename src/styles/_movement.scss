@@ -1,0 +1,44 @@
+.movement {
+    background-color: #D5CEE0;
+    text-align: right;
+    article{
+        header {
+            padding: 2rem 0;
+          height: auto;
+          color: black;
+        }
+      }
+    .description {
+        color: black;
+    }
+    .fries-btn {
+        left: 10px;
+    }
+    h1 {
+        text-align: right;
+    }
+    .mvt-heading .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.artists-list {
+    padding: 0;
+    margin-bottom: 5rem;
+    text-align: left;
+    a {
+        text-align: left;
+    }
+}
+
+#slide-left {
+    background-color: #D5CEE0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    overflow-y: visible;
+    z-index: 10;
+  }

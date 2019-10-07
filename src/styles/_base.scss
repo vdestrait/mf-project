@@ -1,25 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: white;
+
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: "Roboto";
-  background-color: black;
   margin: 0;
+}
+
+.btn {
+  border-radius: 0;
 }
 
 .btn-mf {
     background-color: #D5CEE0;
     border-color: #D5CEE0;
-    border-radius: 0;
 }
 .btn-mf:hover {
     background-color: white;
     border-color: #D5CEE0; 
 }
+.btn-mf-dark {
+  background-color: #6385ff;
+  border-color:  #6385ff;
+}
+.btn-mf-dark:hover {
+  background-color: black;
+  border-color: black; 
+}
+.btn-grey {
+  background-color: #bababa;
+}
+.btn-black {
+  background-color: #000;
+  color: white;
+}
 
+.btn-black:hover {
+  background-color: #647acc;
+  color: white;
+}
 
 #explain {
-  background: #6385ff;
+  background: #647acc; //#6385ff
   color: white;
   width: auto;
   padding: 2rem;
@@ -53,14 +77,14 @@ body {
 }
 
 
-.fries-btn {
+.fries-btn,.fries-btn-art {
   width: 60px;
     height: 60px;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-    border: 1px solid white;
+    //border: 1px solid white;
     border-radius: 50%;
   a {
     width: 50px;

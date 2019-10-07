@@ -1,14 +1,26 @@
+body.home {
+    color: white;
+    background-color: black;
+}
+
 #timeline {
+    background-color: #515151;
     .date-heading {
+        position: relative;
       display: flex;
       align-items: flex-end;
+      padding-top: 10px;
       padding-bottom: 20px;
       border-bottom: solid 1px #707070;
+      min-height: 86px;
+      background-color: #515151;
+      cursor: pointer;
     }
       h2 {
         display: inline-block;
         margin-bottom: 0;
         margin-left: 20px;
+        font-size: 2.5rem;
       }
       .mussel {
         display: inline-block;
@@ -37,6 +49,7 @@
     }
     
     .decade {
+        position: relative;
         display: none;
         opacity: 0;
         border-bottom: 1px solid #707070;
@@ -47,33 +60,42 @@
         opacity: 1;
         transition: all 3s ease-in;
         background-color: #303030;
-        .mvt-heading {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 1rem;
+        .mvt-wrap {
             border-bottom: 1px solid #707070;
-        }
-        .mvt-body {
-            display: none;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #707070;
-        }
-        .mvt-body.open {
-            display:block;
-        }
-        h3 {
-            display: inline-block;
-            margin-bottom: 0;
-            padding-left: 2rem;
-            padding-top: 5px;
+            .mvt-heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1rem;
+                min-height: 86px;
+                cursor: pointer;
+                h3 {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-left: 2rem;
+                    padding-top: 5px;
+                    max-width: 80%;
+                }
+            }
+            .mvt-body {
+                display: none;
+                padding-bottom: 2rem;
+                .mvt-more {
+                    padding: 0.5rem 1rem 1rem 0;
+                    display: block;
+                }
+            }
+            .mvt-body.open {
+                display:block;
+            }
         }
         p {
             padding: 1rem 2rem;
             margin-bottom: 0;
         }
         .fries {
-            display: inline-block;
+            position: absolute;
+            right: 15px;
             width: 50px;
             height: 50px;
             background-image: url(/public/assets/images/fries.png);
@@ -95,14 +117,25 @@
                 transition: 0.1s;
             }
         }
-        .artists-list{
-            padding: 0 .5rem;
-            a {
-                margin: 0.35rem;
-                i {
-                    margin-right: 7.5px;
+    }
+    @media (min-width: 992px){
+        .date-heading {
+            justify-content: center;
+            .mussel {
+                margin-left: 0;
+            }
+        }
+        .decade.open {
+            .mvt-wrap {
+                .mvt-heading {
+                    justify-content: center;
+                    .fries {
+                        position: relative;
+                        margin-left: 25px;
+                    }
                 }
             }
         }
     }
 }
+

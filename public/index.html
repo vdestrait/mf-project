@@ -27,10 +27,23 @@
     <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
     <title>Moules Frites</title>
   </head>
-  <body>
+  <body class="home">
+    <div id="slide-right">
+        <div class="fries-btn-art">
+            <a href="#"></a>
+        </div>
+        
+        <div class="container"></div>
+    </div>
+    <div id="slide-left">
+    </div>
+
+    <div id="core">
     <header>
-      <nav role="navigation"></nav>
-      <img src="/public/assets/images/Asset 5.png" alt="logo" />
+      <div id="brand-logo">
+        <img src="/public/assets/images/Asset 5.png" alt="logo" />
+      </div>
+      
       <div class="container">
         <h1>
           l'art belge <br />
@@ -38,7 +51,7 @@
           contemporaine<br />
         </h1>
         <div id="search" class="d-flex">
-          <input type="text" placeholder="Tapez votre recherche" />
+          <input type="text" placeholder="Recherche..." />
           <i class="material-icons">
             search
           </i>
@@ -50,16 +63,15 @@
         <div class="container">
           <p>
             Ligne du temps retraçant les grands courants et les artistes belges
-            s'inscrivant dans la période contemporaine. Le début de cette
-            période vare d'une source à l'autre et parlant souvent de "la
-            seconde moitié" du XXe et le début du XIe siècle, Commencons donc
-            par les années 50'.
+            s'inscrivant dans la période contemporaine. Les datent de début et de fin de cette
+            période variant d'une source à l'autre et faisant souvent référence à "la
+            seconde moitié" du XXe et le début du XXIe siècle, nous commencerons avec les années 50'.
           </p>
         </div>
       </section>
       <section id="timeline">
         <div id="decade-50">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
@@ -68,8 +80,8 @@
           <!--date-heading-->
 
           <div class="decade">
-            <div id="mvt-0">
-              <div class="mvt-heading container">
+            <div id="mvt-0" class="mvt-wrap">
+              <div class="mvt-heading">
                 <h3>Abstraction géometrique</h3>
                 <div class="fries open"></div>
               </div>
@@ -82,24 +94,25 @@
                   constructivisme, une tendance à l'expression directe de
                   l'émotion individuelle qui est rattachée à l'art informel
                   développé à Paris après la Seconde Guerre mondiale
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
                 </p>
 
                 <div class="artists-list">
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Pol Bury</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Amédée Cortier</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jo Delahaut</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Walter Leblanc</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Luc Peire</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Mig Quinet</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jean Rets</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Dan Van Severen</a>
-                    <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Marthe Wéry</a>
+                    <a class="btn btn-black" data-pos="1" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                    <a class="btn btn-black" data-pos="2" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                    <a class="btn btn-black" data-pos="0" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
                 </div>
               </div>
             </div>
             <!--mvt-n-->
-            <div id="mvt-1">
-              <div class="mvt-heading container">
+            <div id="mvt-1" class="mvt-wrap">
+              <div class="mvt-heading">
                 <h3>Expressionnisme abstrait</h3>
                 <div class="fries open"></div>
               </div>
@@ -112,24 +125,25 @@
                   consiste à retranscrire ses pensées et ses sentiments avec des
                   formes abstraites et des couleurs très variées. Il apparaît en
                   1948 et se développe dans les années 1950-1960,
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
                 </p>
 
                 <div class="artists-list">
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Pol Bury</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Amédée Cortier</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jo Delahaut</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Walter Leblanc</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Luc Peire</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Mig Quinet</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jean Rets</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Dan Van Severen</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Marthe Wéry</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
                 </div>
               </div>
             </div>
             <!--mvt-n-->
-            <div id="mvt-2">
-              <div class="mvt-heading container">
+            <div id="mvt-2" class="mvt-wrap">
+              <div class="mvt-heading">
                 <h3>Autre Mouvement</h3>
                 <div class="fries open"></div>
               </div>
@@ -145,18 +159,19 @@
                   reiciendis beatae, enim nostrum sit laborum dolor odit
                   mollitia sapiente accusantium, in quam est omnis corrupti
                   cupiditate, iure sequi eum voluptatibus.
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
                 </p>
 
                 <div class="artists-list">
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Pol Bury</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Amédée Cortier</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jo Delahaut</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Walter Leblanc</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Luc Peire</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Mig Quinet</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Jean Rets</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Dan Van Severen</a>
-                  <a class="btn btn-mf" href="artist.html"><i class="fa fa-plus"></i>Marthe Wéry</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
                 </div>
               </div>
             </div>
@@ -166,25 +181,223 @@
         </div>
         <!--decade-Y-->
         <div id="decade-60">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
             <h2>1960</h2>
           </div>
           <!--date-heading-->
+          <div class="decade">
+            <div id="mvt-0" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Abstraction géometrique</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  L'abstraction lyrique est une expression employée pour
+                  désigner, en opposition à l'abstraction géométrique, ou au
+                  constructivisme, une tendance à l'expression directe de
+                  l'émotion individuelle qui est rattachée à l'art informel
+                  développé à Paris après la Seconde Guerre mondiale
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+            <div id="mvt-1" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Expressionnisme abstrait</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  L'expressionnisme abstrait est un mouvement artistique qui
+                  s'est développé peu après la Seconde Guerre mondiale et qui
+                  consiste à retranscrire ses pensées et ses sentiments avec des
+                  formes abstraites et des couleurs très variées. Il apparaît en
+                  1948 et se développe dans les années 1950-1960,
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+            <div id="mvt-2" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Autre Mouvement</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam exercitationem vel ipsum eveniet, quis voluptatum
+                  officiis, placeat ad amet est maiores fugiat natus reiciendis
+                  quisquam, laudantium explicabo delectus vitae incidunt? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                  reiciendis beatae, enim nostrum sit laborum dolor odit
+                  mollitia sapiente accusantium, in quam est omnis corrupti
+                  cupiditate, iure sequi eum voluptatibus.
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+          </div>
+          <!--decade-->
         </div>
         <div id="decade-70">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
             <h2>1970</h2>
           </div>
           <!--date-heading-->
+          <div class="decade">
+            <div id="mvt-0" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Abstraction géometrique</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  L'abstraction lyrique est une expression employée pour
+                  désigner, en opposition à l'abstraction géométrique, ou au
+                  constructivisme, une tendance à l'expression directe de
+                  l'émotion individuelle qui est rattachée à l'art informel
+                  développé à Paris après la Seconde Guerre mondiale
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                    <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+            <div id="mvt-1" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Expressionnisme abstrait</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  L'expressionnisme abstrait est un mouvement artistique qui
+                  s'est développé peu après la Seconde Guerre mondiale et qui
+                  consiste à retranscrire ses pensées et ses sentiments avec des
+                  formes abstraites et des couleurs très variées. Il apparaît en
+                  1948 et se développe dans les années 1950-1960,
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+            <div id="mvt-2" class="mvt-wrap">
+              <div class="mvt-heading">
+                <h3>Autre Mouvement</h3>
+                <div class="fries open"></div>
+              </div>
+              <!--mvt-heading-->
+
+              <div class="mvt-body container">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam exercitationem vel ipsum eveniet, quis voluptatum
+                  officiis, placeat ad amet est maiores fugiat natus reiciendis
+                  quisquam, laudantium explicabo delectus vitae incidunt? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                  reiciendis beatae, enim nostrum sit laborum dolor odit
+                  mollitia sapiente accusantium, in quam est omnis corrupti
+                  cupiditate, iure sequi eum voluptatibus.
+                  <a class="mvt-more" href="#">En savoir plus <i class="fa fa-angle-double-right"></i></a>
+                </p>
+
+                <div class="artists-list">
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Pol Bury</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Amédée Cortier</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jo Delahaut</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Walter Leblanc</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Luc Peire</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Mig Quinet</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Jean Rets</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Dan Van Severen</a>
+                  <a class="btn btn-black" href=""><i class="fa fa-plus"></i>Marthe Wéry</a>
+                </div>
+              </div>
+            </div>
+            <!--mvt-n-->
+          </div>
+          <!--decade-->
         </div>
         <div id="decade-80">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
@@ -193,7 +406,7 @@
           <!--date-heading-->
         </div>
         <div id="decade-90">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
@@ -202,7 +415,7 @@
           <!--date-heading-->
         </div>
         <div id="decade-00">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
@@ -211,7 +424,7 @@
           <!--date-heading-->
         </div>
         <div id="decade-10">
-          <div class="date-heading container">
+          <div class="date-heading">
             <div class="mussel">
               <img src="/public/assets/images/mussel-top.png" alt="" />
             </div>
@@ -221,6 +434,8 @@
         </div>
       </section>
     </main>
+
+  </div>
 
     <footer></footer>
   </body>

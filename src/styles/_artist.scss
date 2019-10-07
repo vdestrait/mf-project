@@ -1,4 +1,14 @@
+article.artist {
+  header {
+    height: auto;
+    padding: 2rem 0;
+    text-align: left;
+  }
+}
 
+svg {
+  vertical-align: baseline;
+}
 
 #more {
   display: none;
@@ -7,41 +17,33 @@
   max-width: 100%;
   height: auto;
 }
-#myBtn {
+#read-more {
+  padding: 0rem 1rem 1rem 0;
+  text-decoration: underline;
   margin-bottom: 10px;
+  color: #bababa;
+  cursor: pointer;
+}
+
+.description {
+  margin-bottom: 3rem;
+  .btn-grey:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(213,206,224,.25);
+  }
 }
 
 .card {
+  border: none;
   border-radius: 0;
   .card-img-top {
     border-radius:0,
   }
   .card-body {
-    color: black;
+    padding: 1rem;
   }
 }
 
-
-.lesOeuvres {
-  background: red;
-  color: black;
-  margin: 25px;
-  padding-left: 65px;
-  height: auto;
-}
-
-.element {
-  margin: 5px;
-  color: white;
-}
-
-.text {
-  width: 340px;
-  height: 217px;
-  background: #fff;
-  color: #000000;
-  opacity: 0;
-}
 .card-img-top:hover{
   opacity: 0.6;
   text-align: justify;
@@ -50,4 +52,15 @@
   font-weight: 700;
   font-family: "Times New Roman", Times, serif;
   padding: 30px;
+}
+
+#slide-right {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
+  overflow-y: visible;
+  background-color: #fff;
+  color: black;
+  z-index: 9;
 }

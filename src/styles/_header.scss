@@ -1,8 +1,9 @@
-header {
+.home header {
     display: block;
     padding: 2rem;
     text-align: center;
     height: 100vh;
+    margin-top: 0;
     img {
         max-width: 100%;
     }
@@ -23,10 +24,37 @@ header {
       margin-left: 10px;
       margin-top: 5px;
     }
+    &.side-tablet {
+      h1 {
+        font-size: 1.75rem;
+      }
+      input {
+        max-width: 180px;
+      }
+    }
     @media (min-width: 375px) {
         input{
             max-width: none;
         }
     }
   }
-  
+
+@media (min-width: 768px) {
+  .home header{
+    height: auto;
+    #brand-logo {
+      margin-bottom: 5rem;
+      img {
+        max-height: 400px;
+      }
+    }
+    #search {
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+header {
+  margin-top: 5rem;
+}
+

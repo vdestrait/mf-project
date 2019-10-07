@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Abstraction géométrique</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+
+  </head>
+  <body class="movement">
+
+    <div class="fries-btn">
+        <a href="index.html"></a>
+    </div>
+    
+    <div class="container">
+      <article>
+          <header>
+            <h1># Abstraction géométrique</h1>
+          </header>
+          <div class="description">
+                À l’issue de la Seconde Guerre mondiale, l’abstraction refait son apparition, se déployant selon deux sensibilités distinctes : lyrique et géométrique. L’abstraction géométrique est adoptée par une série d’artistes partageant un idéal de structure et de mesure qui s’unissent dès le milieu des années ‘40 pour défendre leur moyen d’expression basé sur la géométrie. Ceux-ci entendent contribuer à la reconstruction de leur société, notamment par l’intermédiaire de l’art public. Intégrer l’art au quotidien est une préoccupation permanente, les artistes explorant les arts dits appliqués dans ce même but. Un véritable projet social sous-tend leur démarche : mettre l’art à la portée de tous.
+          </div>
+
+        <div class="artists-list">
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Pol Bury</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Amédée Cortier</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Jo Delahaut</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Walter Leblanc</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Luc Peire</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Mig Quinet</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Jean Rets</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Dan Van Severen</a>
+            <a class="btn btn-black" href="artist.html"><i class="fa fa-plus"></i>Marthe Wéry</a>
+        </div>
+      </article>
+
+  
+  </div>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("read-more");
+    
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Lire plus";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Lire moins";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+    </body>
+  
+</html>
