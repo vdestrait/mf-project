@@ -51,19 +51,19 @@ export const renderArtist = function (selectedArtist) {
     
                 <h2>Oeuvres</h2>
                 <div class="row">
-                    <div class="col-sm-3 col-md-4 col-lg-2 offset-lg-2 mb-4">
+                    <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
                           <img src="/public/assets/images/del2.jpg" alt="" class="card-img-top">
                           <div class="card-body">Rythmes inca (1954)</div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-md-4 col-lg-2 mb-4">
+                    <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
                           <img src="/public/assets/images/del3.jpg" alt="" class="card-img-top">
                           <div class="card-body">Esplanade (1987)</div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-md-4 col-lg-2 mb-4">
+                    <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
                           <img src="/public/assets/images/delhaut1.jpg" alt="" class="card-img-top">
                           <div class="card-body">UT Cercle rouge et rectangle noir sur fond bleu (1962)</div>

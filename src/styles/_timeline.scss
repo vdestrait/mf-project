@@ -1,19 +1,20 @@
 body.home {
     color: white;
     background-color: black;
+
 }
 
 #timeline {
-    background-color: #515151;
+    background-color: $middle-grey;
     .date-heading {
         position: relative;
       display: flex;
       align-items: flex-end;
       padding-top: 10px;
       padding-bottom: 20px;
-      border-bottom: solid 1px #707070;
+      border-bottom: solid 1px $grey;
       min-height: 86px;
-      background-color: #515151;
+      background-color: $middle-grey;
       cursor: pointer;
     }
       h2 {
@@ -52,16 +53,16 @@ body.home {
         position: relative;
         display: none;
         opacity: 0;
-        border-bottom: 1px solid #707070;
+        border-bottom: 1px solid $grey;
     }
 
     .decade.open {
         display: block;
         opacity: 1;
         transition: all 3s ease-in;
-        background-color: #303030;
+        background-color: $dark-grey;
         .mvt-wrap {
-            border-bottom: 1px solid #707070;
+            border-bottom: 1px solid $grey;
             .mvt-heading {
                 display: flex;
                 align-items: center;
@@ -81,6 +82,7 @@ body.home {
                 display: none;
                 padding-bottom: 2rem;
                 .mvt-more {
+                    color:#6385ff;
                     padding: 0.5rem 1rem 1rem 0;
                     display: block;
                 }
@@ -96,9 +98,9 @@ body.home {
         .fries {
             position: absolute;
             right: 15px;
-            width: 50px;
-            height: 50px;
-            background-image: url(/public/assets/images/fries.png);
+            width: 60px;
+            height: auto;
+            background-image: url(/public/assets/images/fries-bottom.png);
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: contain;
@@ -106,15 +108,19 @@ body.home {
             img {
                 width: 60px;
                 height: auto;
-                padding-top: 13px;
+                //padding-top: 13px;
             }
         }
         .mvt-heading.active {
             border-bottom: 0;
-            .fries {
-                background-image: url(/public/assets/images/fries-cross.png);
-                transform-style: preserve-3d;
-                transition: 0.1s;
+            .fries.open {
+                transform: rotate(-42deg);
+                transition: all .2s ease;
+                img {
+                    transform: rotate(55deg);
+                    transition: all .2s ease;
+                    transform-origin: 52% 52%;
+                }
             }
         }
     }

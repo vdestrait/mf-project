@@ -36,10 +36,10 @@ export const mvtsAccordion = function () {
 
     if ($(this).hasClass('active')) {
       $(this).removeClass('active').children('.fries').removeClass('open');
-      $(this).next('.mvt-body').removeClass('open');
+      $(this).next('.mvt-body').slideUp();
     } else {
       $(this).addClass('active').children('.fries').addClass('open');
-      $(this).next('.mvt-body').addClass('open');
+      $(this).next('.mvt-body').slideDown();
     }
   });
 };

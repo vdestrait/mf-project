@@ -1,3 +1,14 @@
+// COLORS
+
+$primary : #525eab;
+$secondary : #6385ff;
+$light : #D5CEE0;
+$light-grey : #bababa;
+$grey : #707070;
+$middle-grey : #515151;
+$dark-grey : #303030;
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,23 +25,24 @@ body {
 }
 
 .btn-mf {
-    background-color: #D5CEE0;
-    border-color: #D5CEE0;
+  color: white;
+    background-color: $secondary;
+    border-color: $secondary;
 }
 .btn-mf:hover {
     background-color: white;
-    border-color: #D5CEE0; 
+    border-color: $secondary; 
 }
 .btn-mf-dark {
-  background-color: #6385ff;
-  border-color:  #6385ff;
+  background-color: $secondary;
+  border-color:  $secondary;
 }
 .btn-mf-dark:hover {
   background-color: black;
   border-color: black; 
 }
 .btn-grey {
-  background-color: #bababa;
+  background-color: $light-grey;
 }
 .btn-black {
   background-color: #000;
@@ -38,17 +50,22 @@ body {
 }
 
 .btn-black:hover {
-  background-color: #647acc;
+  background-color: $secondary;
   color: white;
 }
 
 #explain {
-  background: #647acc; //#6385ff
+  background: $primary; //$secondary
   color: white;
-  width: auto;
   padding: 2rem;
   p {
     margin-top: 1rem;
+  }
+}
+#wikipedia {
+  padding: 2rem;
+  h2 {
+    margin-bottom: 1.5rem;
   }
 }
 .material-icons {
@@ -86,6 +103,7 @@ body {
     cursor: pointer;
     //border: 1px solid white;
     border-radius: 50%;
+    z-index: 9;
   a {
     width: 50px;
     height: 50px;
