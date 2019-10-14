@@ -31,8 +31,9 @@ export const decadesAccordion = function () {
 export const mvtsAccordion = function () {
   $('.mvt-heading').on('click', function () {
   // close other mvts
-    $('.mvt-heading').not($(this)).removeClass('active');
-    $('.fries,.mvt-body').removeClass('open');
+    // $('.mvt-heading').not($(this)).removeClass('active');
+    // $('.fries,.mvt-body').removeClass('open');
+    // $('.mvt-body').slideUp();
 
     if ($(this).hasClass('active')) {
       $(this).removeClass('active').children('.fries').removeClass('open');

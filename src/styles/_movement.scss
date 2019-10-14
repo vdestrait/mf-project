@@ -27,9 +27,9 @@
 .artists-list {
     padding: 0;
     margin-bottom: 5rem;
-    text-align: left;
+    text-align: right;
     a {
-        text-align: left;
+        text-align: right;
     }
 }
 
@@ -42,4 +42,12 @@
     overflow-y: visible;
     z-index: 10;
     scrollbar-width: thin;
+    .artists-list {
+        padding: 0;
+        margin-bottom: 5rem;
+        text-align: right;
+        a {
+            text-align: right;
+        }
+    }
   }
