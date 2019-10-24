@@ -1,53 +1,53 @@
 .movement {
-    background-color: #D5CEE0;
+  background-color: #d5cee0;
+  text-align: right;
+  article {
+    header {
+      padding: 2rem 0;
+      height: auto;
+      color: black;
+    }
+  }
+  .description {
+    color: black;
+  }
+  .fries-btn {
+    left: 10px;
+  }
+  h1 {
     text-align: right;
-    article{
-        header {
-            padding: 2rem 0;
-          height: auto;
-          color: black;
-        }
-      }
-    .description {
-        color: black;
-    }
-    .fries-btn {
-        left: 10px;
-    }
-    h1 {
-        text-align: right;
-    }
-    .mvt-heading .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  }
+  .mvt-heading .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .artists-list {
+  padding: 0;
+  margin-bottom: 5rem;
+  text-align: left;
+  a {
+    text-align: right;
+  }
+}
+
+#slide-left {
+  background-color: #d5cee0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: -100%;
+  overflow-y: visible;
+  z-index: 10;
+  scrollbar-width: thin;
+  .artists-list {
     padding: 0;
     margin-bottom: 5rem;
     text-align: right;
     a {
-        text-align: right;
-    }
-}
-
-#slide-left {
-    background-color: #D5CEE0;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
-    overflow-y: visible;
-    z-index: 10;
-    scrollbar-width: thin;
-    .artists-list {
-        padding: 0;
-        margin-bottom: 5rem;
-        text-align: right;
-        a {
-            text-align: right;
-        }
+      text-align: right;
     }
   }
+}

@@ -1,7 +1,7 @@
 header {
   margin-top: 5rem;
   position: relative;
-  
+
   .arrow-down {
     width: 40px;
     color: white;
@@ -12,50 +12,50 @@ header {
 }
 
 .home header {
-    padding: 2rem;
-    text-align: center;
-    height: 100vh;
-    margin-top: 0;
-    h1 {
-      margin-bottom: 1rem;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  margin-top: 0;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 100%;
+  }
+  #search {
+    position: absolute;
+    bottom: 8%;
+    input {
+      margin-bottom: 20px;
+      border: 1.5px solid white;
+      font-size: 17px;
+      background: black;
+      color: white;
+      padding: 5px 10px;
+      max-width: 200px;
     }
     img {
-        max-width: 100%;
-    }
-    #search {
-        position: absolute;
-        bottom: 8%;
-        input {
-          margin-bottom: 20px;
-          border: 1.5px solid white;
-          font-size: 17px;
-          background: black;
-          color: white;
-          padding: 5px 10px;
-          max-width: 200px;
-        }
-        img {
-          max-height: 40px;
-          padding: 5px;
-        }
-    }
-    &.side-tablet {
-      h1 {
-        font-size: 1.75rem;
-      }
-      input {
-        max-width: 180px;
-      }
-    }
-    @media (min-width: 375px) {
-        input{
-            max-width: none;
-        }
+      max-height: 40px;
+      padding: 5px;
     }
   }
+  &.side-tablet {
+    h1 {
+      font-size: 1.75rem;
+    }
+    input {
+      max-width: 180px;
+    }
+  }
+  @media (min-width: 375px) {
+    input {
+      max-width: none;
+    }
+  }
+}
 
 @media (min-width: 768px) {
-  .home header{
+  .home header {
     // height: auto;
     .arrow-down {
       width: 50px;
@@ -78,21 +78,29 @@ header {
       justify-content: flex-end;
       position: relative;
       bottom: 0;
-      
     }
   }
 }
 
 @media (min-width: 992px) {
-  .home header{
+  .home header {
+    position: relative;
     #brand-logo {
-      padding-left:22%;
+      padding-left: 22%;
       margin-bottom: 0;
     }
     #main-title {
-      padding-right: 12rem;
-      padding-bottom: 3rem;
+      position: absolute;
+      bottom: 15%;
+      right: 35%;
     }
   }
 }
 
+@media (min-width: 1400px) {
+  .home header {
+    #brand-logo {
+      margin-top: 5rem;
+    }
+  }
+}

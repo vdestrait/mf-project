@@ -1,52 +1,30 @@
+import { parseWikiDate } from './parse-date';
+import { textTreat } from './text-treatment';
+
 export const renderArtist = function (selectedArtist) {
+  const dateOfBirth = parseWikiDate(selectedArtist.data.birthDate);
+  const dateOfDeath = parseWikiDate(selectedArtist.data.deathDate);
+  const textIntro = textTreat(selectedArtist.data.intro);
+  const textBio = textTreat(selectedArtist.data.bio);
   const content = `
           <article class="artist">
               <header>
                 <h1>${selectedArtist.name}</h1>
                 <p>
-                  22 juillet 1911 (Vottem ) </br>
+                ${dateOfBirth}</br>
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 12">
                     <g id="Groupe_13" data-name="Groupe 13" transform="translate(-1015 -3)">
                       <line id="Ligne_2" data-name="Ligne 2" x2="8.333" transform="translate(1015.5 6.634)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
                       <line id="Ligne_3" data-name="Ligne 3" y2="10.795" transform="translate(1019.667 3.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
                     </g>
                   </svg>
-                  20 février 1992 (Schaerbeek)
+                  ${dateOfDeath} 
                 </p>
               </header>
               <div class="description">
-                <p> Formé à l'académie des beaux-arts de Liège, il est l'élève d'Auguste
-                    Mambour (1928-1934). Docteur en histoire de l'art de l'Université de
-                    Liège, il commence à peindre en 1940 des toiles expressionnistes.
-                    Influencé par le style du peintre Auguste Herbin, il construit des
-                    formes géométriques statiques dans lesquelles, dans un premier temps, la
-                    couleur des surfaces joue le rôle principal.<span id="dots">...</span>
-                    <span id="more"> Il devient en 1946-47, le
-                    seul peintre à aborder l'abstraction avec un radicalisme inconnu
-                    jusqu'alors. Au fil des années, son œuvre s'épure et on peut dire
-                    qu'elle équivaut aux ouvrages américains du « hard edge » et du «
-                    minimalisme ».
-                    Sociétaire du Salon des réalités nouvelles à Paris en 1946, membre de
-                    la Jeune Peinture belge à Bruxelles en 1947, aux côtés de Mig Quinet
-                    (1906-2001), Louis Van Lint (1909-1986), Gaston Bertrand (1910-1994),
-                    Marc Mendelson (1915-2013), Anne Bonnet (1908-1960), membre fondateur
-                    du groupe belge Art Abstrait en 1952, il est coauteur en 1954 du
-                    Manifeste spatialiste, avec Pol Bury (1922), entre autres. Son
-                    abstraction géométrique était un moyen d'éveiller les mécanismes de
-                    l'activité intellectuelle, un métalangage adressé à l'esprit.
-                    Nourrissant l'ancestral rapport dialectique entre la forme et la
-                    couleur, il utilise la géométrie plane dans son travail car elle est,
-                    dit-il : « la plus représentative de l'homme (...). Elle ajoute à la
-                    clarté d'un exposé, elle est lisible, compréhensible intuitivement
-                    même par ceux qui en ignorent la théorie ». Delahaut écrit énormément
-                    sur l'art parce qu'il n'y a dans sa pratique aucune habitude, aucune
-                    répétition. Le peintre est un poète usant du champ des couleurs pour
-                    dilater le temps et l'espace, coïncider avec ce sentiment d'infini qui
-                    est objet de la poésie. Son art est parlant par sa simplicité, sa
-                    sensibilité au dynamisme et à l'harmonie des couleurs et des formes.
-                  </span>
-                  </p>
-                  <a onclick="myFunction()" id="read-more">Lire plus</a>
+                <p>${textIntro}</p>
+                <h2>Biographie</h2>
+                <p>${textBio}</p>
               </div>
     
                 <h2>Oeuvres</h2>

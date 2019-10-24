@@ -15,16 +15,16 @@ decadesAccordion();
 // Movements
 mvtsAccordion();
 
+// Artists Buttons
 
-// Content of left slide
-const movement = renderMvt();
-$('#slide-left').append(movement);
+for (const artist of artists) {
+  $(`<a class="btn btn-black" data-pos="${artist.id}" href=""><i class="fa fa-plus"></i>${artist.name}</a>`).appendTo($('.artists-list'));
+}
 
 // Single artist page slides in from the right side
 const artistBtn = $('.artists-list > a');
 const closeArtBtn = $('.fries-btn-art');
 const artistSlide = $('#slide-right');
-console.log(closeArtBtn);
 slideRight(artistBtn, closeArtBtn, artistSlide);
 
 // Single movement page slides in from the left side

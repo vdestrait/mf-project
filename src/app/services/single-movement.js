@@ -1,4 +1,5 @@
-export const renderMvt = function () {
+export const renderMvt = function (selectedMvt) {
+  console.log('selectedMvt :' + selectedMvt);
   const content = `<div class="movement">
     <div class="fries-btn">
         <a href="index.html"></a>
@@ -7,10 +8,10 @@ export const renderMvt = function () {
     <div class="container">
       <article>
           <header>
-            <h1># Abstraction géométrique</h1>
+            <h1># ${selectedMvt.title}</h1>
           </header>
           <div class="description">
-                À l’issue de la Seconde Guerre mondiale, l’abstraction refait son apparition, se déployant selon deux sensibilités distinctes : lyrique et géométrique. L’abstraction géométrique est adoptée par une série d’artistes partageant un idéal de structure et de mesure qui s’unissent dès le milieu des années ‘40 pour défendre leur moyen d’expression basé sur la géométrie. Ceux-ci entendent contribuer à la reconstruction de leur société, notamment par l’intermédiaire de l’art public. Intégrer l’art au quotidien est une préoccupation permanente, les artistes explorant les arts dits appliqués dans ce même but. Un véritable projet social sous-tend leur démarche : mettre l’art à la portée de tous.
+            ${selectedMvt.content}
           </div>
 
         <div class="artists-list">
