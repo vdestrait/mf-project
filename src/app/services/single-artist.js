@@ -31,23 +31,30 @@ export const renderArtist = function (selectedArtist) {
                 <div class="row">
                     <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
-                          <img src="/public/assets/images/del2.jpg" alt="" class="card-img-top">
+                          <a class="example-image-link" href="/public/assets/images/del2.jpg" data-lightbox="artist-lightbox" data-title="Rythmes Inca (1954)">
+                            <img class="example-image card-img-top" src="/public/assets/images/del2.jpg" alt=""/>
+                          </a>
                           <div class="card-body">Rythmes inca (1954)</div>
                         </div>
                     </div>
                     <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
-                          <img src="/public/assets/images/del3.jpg" alt="" class="card-img-top">
+                          <a class="example-image-link" href="/public/assets/images/del3.jpg" data-lightbox="artist-lightbox" data-title="Esplanade (1987)">
+                            <img class="example-image card-img-top" src="/public/assets/images/del3.jpg" alt=""/>
+                          </a>
                           <div class="card-body">Esplanade (1987)</div>
                         </div>
                     </div>
                     <div class="col-sm-3 col-md-12 col-lg-12 mb-4">
                         <div class="card">
-                          <img src="/public/assets/images/delhaut1.jpg" alt="" class="card-img-top">
+                          <a class="example-image-link" href="/public/assets/images/delhaut1.jpg" data-lightbox="artist-lightbox" data-title="UT Cercle rouge et rectangle noir sur fond bleu (1962)">
+                            <img class="example-image card-img-top" src="/public/assets/images/delhaut1.jpg" alt=""/>
+                          </a>
                           <div class="card-body">UT Cercle rouge et rectangle noir sur fond bleu (1962)</div>
                         </div>
                     </div>
                 </div>
+                
           </article>
           `;
   return content;
