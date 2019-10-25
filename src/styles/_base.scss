@@ -1,53 +1,72 @@
+// COLORS
+
+$primary : #525eab;
+$secondary : #6385ff;
+$light : #D5CEE0;
+$light-grey : #bababa;
+$grey : #707070;
+$middle-grey : #515151;
+$dark-grey : #303030;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: "Roboto";
-  background-color: black;
   margin: 0;
 }
 
-.container {
-  color: white;
-  padding: 0 20px;
-  max-width: 350px;
-  margin: 0 auto;
+.btn {
+  border-radius: 0;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
+.btn-mf {
+  color: white;
+    background-color: $secondary;
+    border-color: $secondary;
 }
-header {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  h1 {
-    color: orange;
-    text-align: center;
-    font-size: 40px;
-  }
-  input {
-    margin-bottom: 20px;
-    border: 3px solid white;
-    font-size: 17px;
-    background: black;
-    color: white;
-    padding: 10px;
-  }
-  input [type="text"] {
-    margin: 40px;
-  }
-  i {
-    margin-left: 20px;
-  }
+.btn-mf:hover {
+    background-color: white;
+    border-color: $secondary; 
+}
+.btn-mf-dark {
+  background-color: $secondary;
+  border-color:  $secondary;
+}
+.btn-mf-dark:hover {
+  background-color: black;
+  border-color: black; 
+}
+.btn-grey {
+  background-color: $light-grey;
+}
+.btn-black {
+  background-color: #000;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: $secondary;
+  color: white;
 }
 
 #explain {
-  background: #6385ff;
+  background: $primary; //$secondary
   color: white;
-  padding: 10px;
-  width: auto;
+  padding: 2rem;
+  p {
+    margin-top: 1rem;
+  }
+}
+#wikipedia {
+  padding: 2rem;
+  h2 {
+    margin-bottom: 1.5rem;
+  }
 }
 .material-icons {
   font-family: "Material Icons";
@@ -73,49 +92,31 @@ header {
   /* Support for IE. */
   font-feature-settings: "liga";
 }
-.dates {
-  .date-heading {
-    .mussel {
-      display: inline-block;
-      width: 60px;
-      height: 60px;
-      background-image: url(/public/assets/images/mussel-bottom.png);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: contain;
-      img {
-        width: 60px;
-        height: auto;
-        padding-top: 13px;
-      }
-    }
-    .mussel:hover {
-      img {
-        transform-origin: 10% 95%;
-        transform: rotate(-30deg);
-        transition: 0.5s;
-      }
-    }
-    h2 {
-      font-size: 1.5rem;
-      display: inline-block;
-    }
-  }
 
-  p {
-    color: #4b3737;
-    background: white;
-    padding: 10px;
-    margin: 25px;
-    width: auto;
+
+.fries-btn,.fries-btn-art {
+  width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    //border: 1px solid white;
+    border-radius: 50%;
+    z-index: 9;
+  a {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-image: url(/public/assets/images/fries-cross_bn.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
   }
-  h3 {
-    font-family: "Comfortaa", cursive;
-  }
-  h4 {
-    font-size: 1.2rem;
-  }
+  
 }
-h1.artist {
-  color: yellow;
-}
+
+

@@ -1,0 +1,71 @@
+article.artist {
+  
+  header {
+    height: auto;
+    padding: 2rem 0;
+    text-align: left;
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+svg {
+  vertical-align: baseline;
+}
+
+#more {
+  display: none;
+}
+.oeuvres {
+  max-width: 100%;
+  height: auto;
+}
+#read-more {
+  padding: 0rem 1rem 1rem 0;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: #bababa;
+  cursor: pointer;
+}
+
+.description {
+  margin-bottom: 3rem;
+  .btn-grey:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(213,206,224,.25);
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  .card-img-top {
+    border-radius:0,
+  }
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+.card-img-top:hover{
+  opacity: 0.9;
+  text-align: justify;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#slide-right {
+  position: absolute;
+  width: 0;
+  height: 100vh;
+  right: -100%;
+  overflow-y: visible;
+  background-color: #fff;
+  color: black;
+  z-index: 9;
+  scrollbar-width: thin;
+  overflow: hidden;
+}

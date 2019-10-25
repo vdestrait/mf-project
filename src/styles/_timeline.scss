@@ -1,0 +1,147 @@
+body.home {
+    color: white;
+    background-color: black;
+
+}
+
+#timeline {
+    background-color: $middle-grey;
+    .date-heading {
+        position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: solid 1px $grey;
+      min-height: 86px;
+      background-color: $middle-grey;
+      cursor: pointer;
+    }
+      h2 {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 20px;
+        font-size: 2.5rem;
+      }
+      .mussel {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-image: url(/public/assets/images/mussel-bottom.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        margin-left: 5%;
+        img {
+          width: 60px;
+          height: auto;
+          padding-top: 13px;
+        }
+      }
+      
+    .date-heading.active {
+        .mussel {
+            img {
+                transform: rotate(-30deg);
+              transform-origin: 15% 95%;
+              transition: all .5s ease-in-out;
+            }
+          }
+    }
+    
+    .decade {
+        position: relative;
+        display: none;
+        opacity: 0;
+        border-bottom: 1px solid $grey;
+    }
+
+    .decade.open {
+        display: block;
+        opacity: 1;
+        transition: all 3s ease-in;
+        background-color: $dark-grey;
+        .mvt-wrap {
+            border-bottom: 1px solid $grey;
+            .mvt-heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1rem;
+                min-height: 86px;
+                cursor: pointer;
+                h3 {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-left: 2rem;
+                    padding-top: 5px;
+                    max-width: 80%;
+                }
+            }
+            .mvt-body {
+                display: none;
+                padding-bottom: 2rem;
+                .mvt-more {
+                    color:#6385ff;
+                    padding: 0.5rem 1rem 1rem 0;
+                    display: block;
+                }
+            }
+            .mvt-body.open {
+                display:block;
+            }
+        }
+        p {
+            padding: 1rem 2rem;
+            margin-bottom: 0;
+        }
+        .fries {
+            position: absolute;
+            right: 15px;
+            width: 60px;
+            height: auto;
+            background-image: url(/public/assets/images/fries-bottom.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            margin-left: 10%;
+            img {
+                width: 60px;
+                height: auto;
+                //padding-top: 13px;
+            }
+        }
+        .mvt-heading.active {
+            border-bottom: 0;
+            .fries.open {
+                transform: rotate(-42deg);
+                transition: all .2s ease;
+                img {
+                    transform: rotate(55deg);
+                    transition: all .2s ease;
+                    transform-origin: 52% 52%;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px){
+        .date-heading {
+            justify-content: center;
+            .mussel {
+                margin-left: 0;
+            }
+        }
+        .decade.open {
+            .mvt-wrap {
+                .mvt-heading {
+                    justify-content: center;
+                    .fries {
+                        position: relative;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+

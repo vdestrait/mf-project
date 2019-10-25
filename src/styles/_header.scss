@@ -1,12 +1,106 @@
 header {
-    height: 100vh;
+  margin-top: 5rem;
+  position: relative;
 
-    
+  .arrow-down {
+    width: 40px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -20px;
+  }
 }
 
-// @media (min-width:768px){
-//     header {
-//         height: 50vh;
-//     }
-// }
+.home header {
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  margin-top: 0;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 100%;
+  }
+  #search {
+    position: absolute;
+    bottom: 8%;
+    input {
+      margin-bottom: 20px;
+      border: 1.5px solid white;
+      font-size: 17px;
+      background: black;
+      color: white;
+      padding: 5px 10px;
+      max-width: 200px;
+    }
+    img {
+      max-height: 40px;
+      padding: 5px;
+    }
+  }
+  &.side-tablet {
+    h1 {
+      font-size: 1.75rem;
+    }
+    input {
+      max-width: 180px;
+    }
+  }
+  @media (min-width: 375px) {
+    input {
+      max-width: none;
+    }
+  }
+}
 
+@media (min-width: 768px) {
+  .home header {
+    // height: auto;
+    .arrow-down {
+      width: 50px;
+      margin-left: -25px;
+      bottom: 50px;
+    }
+    #brand-logo {
+      text-align: left;
+      margin-bottom: 5rem;
+      padding-left: 5rem;
+      padding-top: 2rem;
+      img {
+        max-height: 400px;
+      }
+    }
+    h1 {
+      text-align: right;
+    }
+    #search {
+      justify-content: flex-end;
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home header {
+    position: relative;
+    #brand-logo {
+      padding-left: 22%;
+      margin-bottom: 0;
+    }
+    #main-title {
+      position: absolute;
+      bottom: 15%;
+      right: 35%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .home header {
+    #brand-logo {
+      margin-top: 5rem;
+    }
+  }
+}
