@@ -3,15 +3,22 @@ import $ from 'jquery';
 import { decadesAccordion, mvtsAccordion } from './app/helpers/accordion';
 import { artists } from './app/services/artists';
 import { slideRight, slideLeft } from './app/services/slides';
-import { renderArtist } from './app/services/single-artist';
-import { renderMvt } from './app/services/single-movement';
+// import { renderArtist } from './app/services/single-artist';
+// import { renderMvt } from './app/services/single-movement';
 // import 'lightbox2';
+import { movements } from './app/services/movements';
+import { timelineMvts } from './app/services/timeline-mvts';
 
 
 /* TIMELINE ACCORDIONS */
 
 // Decades
+const decade50 = timelineMvts(movements);
+
+$('#decade-50 .decade').append(decade50);
+
 decadesAccordion();
+
 
 // Movements
 mvtsAccordion();

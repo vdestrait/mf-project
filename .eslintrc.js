@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jquery:true
+    jquery: true,
   },
   extends: 'airbnb-base',
   globals: {
@@ -25,7 +25,7 @@ module.exports = {
     'linebreak-style': 0,
     'max-len': [
       'error',
-      80,
+      100,
       {
         ignoreComments: true,
         ignoreUrls: true,
