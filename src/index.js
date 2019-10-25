@@ -5,7 +5,7 @@ import { artists } from './app/services/artists';
 import { slideRight, slideLeft } from './app/services/slides';
 import { renderArtist } from './app/services/single-artist';
 import { renderMvt } from './app/services/single-movement';
-import 'lightbox2';
+// import 'lightbox2';
 
 
 /* TIMELINE ACCORDIONS */
